@@ -11,5 +11,6 @@ if get_started.isdigit():
         quit()
 else:
     print("Please type a number next time")
-
+    quit()
+    
 random_number = random.randint(0, 11)
