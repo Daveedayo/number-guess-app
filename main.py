@@ -18,5 +18,21 @@ start = input("Are you ready to guess the correct number?: ").lower()
 if start != "yes":
     quit()
 
-print("Okay! Let's give it a try!")  
-random_number = random.randint(0, 11)
+print("Okay! Let's give it a try!") 
+random_number = random.randint(0, get_started)
+
+while True:
+   guess = input('Make a guess: ')
+   if guess.isdigit():
+        guess = int(guess)
+   else:
+       print("Please type a number next time")
+       continue
+
+   if guess == random_number:
+        print("You got it")
+        break
+   elif guess < random_number:
+       print("You were below the number")
+   else:
+        print("You were above the number")
