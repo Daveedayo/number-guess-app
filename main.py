@@ -42,3 +42,12 @@ while True:
    else:
         print("Nah! You were above the number")  
 
+if guesses == 1:
+    print("You got it in", guesses, "guess")  
+else:
+    print("You got it in", guesses, "guesses")
+
+if score == 1:
+    print("You got", score, "scores")
+else:
+    print("You got", score, "scores")
