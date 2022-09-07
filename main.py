@@ -21,7 +21,11 @@ if start != "yes":
 print("Okay! Let's give it a try!") 
 random_number = random.randint(0, get_started)
 
+guesses = 0
+
 while True:
+   guesses += 1
+
    guess = input('Make a guess: ')
    if guess.isdigit():
         guess = int(guess)
@@ -35,4 +39,6 @@ while True:
    elif guess < random_number:
        print("You were below the number")
    else:
-        print("You were above the number")
+        print("You were above the number")  
+
+print("You got it in", guesses, "guesses")       
