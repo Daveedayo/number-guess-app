@@ -1,1 +1,1 @@
-# number-guess-app
+# Number guess app
